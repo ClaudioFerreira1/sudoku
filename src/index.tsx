@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import { unregister } from './core'
-import { Card, Content, Title } from './components'
+import { Card, Content, Grid, Title } from './components'
 import { GlobalStyles, theme } from './styles'
 import { ThemeProvider } from 'styled-components'
 
@@ -11,7 +11,9 @@ ReactDOM.render(
     <GlobalStyles />
     <Content>
       <Title>Sudoku</Title>
-      <Card>Work in progress over here</Card>
+      <Card>
+        <Grid />
+      </Card>
     </Content>
   </ThemeProvider>,
   document.getElementById('root')
